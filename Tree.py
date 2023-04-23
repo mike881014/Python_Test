@@ -17,6 +17,7 @@ class treeNode:
             self.right = treeNode(val)
         else:
             self.right.insertRight(val)
+
     def show(self, tree_struct):
         if tree_struct != None:
             self.show(tree_struct.left)
@@ -24,7 +25,8 @@ class treeNode:
             self.show(tree_struct.right)
 
 # 執行方式
-sampleTree = treeNode(5)
+sampleTree = treeNode(5) #implete
+
 sampleTree.insertRight(7)
 sampleTree.insertRight(8)
 sampleTree.insertLeft(3)
